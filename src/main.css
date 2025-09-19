@@ -1,0 +1,35 @@
+@font-face {
+  font-family: "Outift-Reguler";
+  font-style: normal;
+  font-weight: normal;
+  src: url(./Assets/Fonts/Outfit-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Outfit-Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url(./Assets/Fonts/Outfit-Bold.ttf) format("truetype");
+}
+@import "tailwindcss";
+
+@theme {
+  --color-slate-900: #1f314f;
+  --color-slate-500: #68778d;
+  --color-slate-300: #d5e1ef;
+  --color-white: #ffffff;
+  --font-outift-reguler: "Outfit-Reguler";
+  --font-outift-bold: "Outfit-Bold";
+  --spacing-500: 40px;
+  --spacing-300: 24px;
+  --spacing-200: 16px;
+  --breakpoint-mobile: 375px;
+  --breakpoint-desktop: 1440px;
+}
+
+.text-preset-1 {
+  @apply font-outift-bold text-[22px] leading-[120%] tracking-normal;
+}
+.text-preset-2 {
+  @apply font-outift-reguler text-[15px] leading-[140%] tracking-[0.2px];
+}
