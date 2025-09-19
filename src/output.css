@@ -182,6 +182,12 @@
   }
 }
 @layer utilities {
+  .mx-\[27\.5px\] {
+    margin-inline: 27.5px;
+  }
+  .my-\[156\.5px\] {
+    margin-block: 156.5px;
+  }
   .flex {
     display: flex;
   }
@@ -193,12 +199,6 @@
   }
   .h-\[499px\] {
     height: 499px;
-  }
-  .h-\[812px\] {
-    height: 812px;
-  }
-  .h-screen {
-    height: 100vh;
   }
   .w-\[288px\] {
     width: 288px;
@@ -285,6 +285,21 @@
   .outline {
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
+  }
+  .mobile\:h-\[812px\] {
+    @media (width >= 375px) {
+      height: 812px;
+    }
+  }
+  .desktop\:mx-\[560px\] {
+    @media (width >= 1440px) {
+      margin-inline: 560px;
+    }
+  }
+  .desktop\:my-\[230\.5px\] {
+    @media (width >= 1440px) {
+      margin-block: 230.5px;
+    }
   }
   .desktop\:h-\[960px\] {
     @media (width >= 1440px) {
