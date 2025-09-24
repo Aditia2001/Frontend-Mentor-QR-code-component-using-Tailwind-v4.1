@@ -26,10 +26,11 @@
   --breakpoint-mobile: 375px;
   --breakpoint-desktop: 1440px;
 }
-
-.text-preset-1 {
-  @apply font-outift-bold text-[22px] leading-[120%] tracking-normal;
-}
-.text-preset-2 {
-  @apply font-outift-reguler text-[15px] leading-[140%] tracking-[0.2px];
+@layer component {
+  .text-preset-1 {
+    @apply font-outift-bold text-[22px] leading-[120%] tracking-normal;
+  }
+  .text-preset-2 {
+    @apply font-outift-reguler text-[15px] leading-[140%] tracking-[0.2px];
+  }
 }
